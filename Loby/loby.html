@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gartic Phone Lobby</title>
+    <link rel="stylesheet" href="loby.css">
+</head>
+<body>
+    <div class="lobby-container">
+        <aside class="players-panel">
+            <h2>Гравці (4/12)</h2>
+            <ul id="player-list">
+                <li class="player me"><span>🎨</span> Ви (Хост)</li>
+                <li class="player"><span>🦊</span> СпритнийЛис</li>
+                <li class="player"><span>🍕</span> ПіцаМан</li>
+                <li class="player"><span>🤖</span> РобоБот</li>
+            </ul>
+            <div class="invite-section">
+                <input type="text" value="gartic.io/room123" readonly>
+                <button>Копіювати</button>
+            </div>
+        </aside>
+
+        <main class="settings-panel">
+            <header>
+                <h1>Gartic <span class="accent">Phone</span></h1>
+                <p>Налаштуйте гру перед початком</p>
+            </header>
+
+            <section class="game-modes">
+                <div class="mode active">Нормальний</div>
+                <div class="mode">Швидкість</div>
+                <div class="mode">Сендвіч</div>
+            </section>
+
+            <div class="start-actions">
+                <button id="start-btn">ПОЧАТИ ГРУ</button>
+            </div>
+        </main>
+
+        <aside class="chat-panel">
+            <div class="chat-messages" id="chat">
+                <p><strong>Система:</strong> Ласкаво просимо до лобі!</p>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Напишіть щось...">
+                <button>➤</button>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
